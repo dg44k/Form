@@ -1,0 +1,7 @@
+@import url(../css/reset.css);
+
+:root{
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
