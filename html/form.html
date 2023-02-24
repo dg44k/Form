@@ -12,42 +12,28 @@
   <title>FORM</title>
 </head>
 <body>
+  <div class="intro-img"></div>
+
   <div class="wrapper">
-    <h1>Welcome</h1>
+    <h1 class="title">Welcome <span></span></h1>
 
     <form action="#" method="post">
-      <div class="name">
-        <label for="firstName">Name</label>
-        <input type="text" name="firstName" id="firstName" placeholder="Dima" required>
+      <div class="inputs">
+        <input type="text" name="firstName" id="firstName" placeholder="first Name" required>
+        <input type="text" name="LastName" id="lastName" placeholder="Last name" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required minlength="13">
+        <input type="password" name="password" id="password" required placeholder="Password">
+        <input type="password" name="passwordRepeat" id="passwordRepeat" placeholder = "Confirn Password" required>
       </div>
-      <div class="email">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
-      </div>
-      <div class="tel">
-        <label for="phoneNumber">Phone Number</label>
-        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+375 29 178 0079" required>
-      </div>
-      <div class="pass">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" required>
-      </div>
-      <div class="passConfirm">
-        <label for="passwordRepeat">Confirm Password</label>
-        <input type="password" name="passwordRepeat" id="passwordRepeat" required>
-      </div>
-      <div class="policy">
-        <input type="checkbox" name="rules" id="rules">
-        <label for="rules">
-          By registering, you agree to the Terms of Service and Privacy Policy, as well as the Cookies Policy.
-        </label>
-      </div>
+
       <button type="submit">Create Account</button>
       <div class="alreadyaAccount">
         <span>Already have an account?</span> 
         <a href="#">Log in</a>
       </div>
     </form>
+
   </div>
   
 </body>

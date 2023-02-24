@@ -1,7 +1,115 @@
 @import url(../css/reset.css);
 
+*{
+  box-sizing: border-box;
+}
 :root{
   font-family: 'Oswald', Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+.intro-img{
+  background: url(../img/w2.jpg);
+  background-position: center;
+  background-size: 40vw;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 100vh;
+  object-fit: cover;
+
+}
+.wrapper{
+  width: 60vw;
+  height: 100vh;
+  padding: 20px;
+  background-color: #666;
+  height: 100%;
+}
+
+.title{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+
+input{
+  padding: 15px;
+  border: none;
+  background: none;
+  border-bottom: #000 2px solid;
+  width: 250px;
+  cursor: pointer;
+}
+input:hover{
+  border-color: #fff;
+  transition: ease-in-out 0.3s;
+}
+input:focus{
+  outline: none;
+  border-color: #fff;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:#000;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;  
+}
+
+.inputs{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+  justify-content: center;
+}
+
+button{
+  display: block;
+  padding: 20px 25px;
+  cursor: pointer;
+  border-radius: 12px;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  background: none;
+  font-size: 0.7rem;
+  margin: 70px auto 0 auto;
+}
+
+button:hover{
+  border-color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+.alreadyaAccount{
+  width:max-content;
+  display: block;
+  font-size: 0.8rem;
+  margin: 15px auto;
 }
