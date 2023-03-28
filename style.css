@@ -101,6 +101,12 @@ input{
   outline: 1px #ccc solid;
 }
 
+input:focus{
+  box-shadow: 2px 2px 3px #ccc;
+  transition: ease-in-out .3ms;
+  outline: 2px solid #596D48;
+}
+/* BUTTON */
 .logIn{
   margin-top: 25px;
 }
@@ -118,10 +124,9 @@ input{
 
 .btnSub+p{
   font-size: 1.2rem;
-
   margin-top: 40px;
 }
-
+ /* FOOTER */
 footer{
   text-align: center;
   background-color: #596D48;
