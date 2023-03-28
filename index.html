@@ -28,7 +28,7 @@
       </div>
       <div class="block-form">
         <h2>Let's do this!</h2>
-        <form action="#" method="post">
+        <form action="#" method="post" id="my-form">
           <label for="firstName">
             FIRST NAME
             <input type="text" name="firstName" id="firstName" required
@@ -57,10 +57,9 @@
             CONFIRN PASSWORD
             <input type="password" name="confirnPassword" id="confirnPassword" required>
           </label>
-
-          <button type="submit">Create Account</button>
         </form>
         <div class="logIn">
+          <button type="submit" form="my-form">Create Account</button>
           <p>Already have an account?<a href="#">Log In</a></p>
         </div>
       </div>
